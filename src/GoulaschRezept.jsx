@@ -19,8 +19,10 @@ function GoulaschRezept() {
             <div className="content">
                 <div className="anzahlPortionen">
                     <label htmlFor="anzahlPortionen">Anzahl Portionen:</label>
-                    <input type="number" name="anzahlPortionen" id="anzahlPortionen" max="100" min="1" defaultValue="4"/>
+                    <input type="number" name="anzahlPortionen" id="anzahlPortionen" max="100" min="1"
+                           defaultValue="4"/>
                 </div>
+
 
                 <div className="info-section">
                     <div className="box">
@@ -47,18 +49,97 @@ function GoulaschRezept() {
                     </div>
                 </div>
 
+                <h1>Nährwerte pro Portion (...g)</h1>
+
+                <div className="nährwerte">
+
+                    <table>
+                        <tr>
+                            <td>Kalorien</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Fett</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>davon gesättigte Fettsäuren</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Kohlenhydrathe</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>davon Zucker</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Proteine</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Salz</td>
+                            <td>100</td>
+                        </tr>
+                    </table>
+                </div>
+
                 <div className="steps">
                     <h1>Schritt für Schritt Anleitung</h1>
                     <div className="step">
-                        <div className="step-image">
+                        <div className="step-left">
                             <img src={bild}/>
                         </div>
-                        <div className="step-text">
+
+                        <div className="step-right">
                             <h3>Schritt 1</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 <br/>
                                 sed do eiusmod tempor incididunt ut
                                 labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+
+                    <div className="step">
+                        <div className="step-left">
+                            <h3>Schritt 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                <br/>
+                                sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.</p>
+                        </div>
+
+                        <div className="step-right">
+                            <img src={bild}/>
+                        </div>
+                    </div>
+
+                    <div className="step">
+                        <div className="step-left">
+                            <img src={bild}/>
+                        </div>
+
+                        <div className="step-right">
+                            <h3>Schritt 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                <br/>
+                                sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+
+                    <div className="step">
+                        <div className="step-left">
+                            <h3>Schritt 4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                <br/>
+                                sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.</p>
+                        </div>
+
+                        <div className="step-right">
+                            <img src={bild}/>
                         </div>
                     </div>
                 </div>

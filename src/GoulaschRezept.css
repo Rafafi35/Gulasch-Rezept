@@ -60,16 +60,27 @@ h1 {
 }
 
 .step {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    margin: 20px;
+    padding: 30px;
+    border: solid black 3px;
 }
 
-.step-image {
-    align-content: start;
+.step-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.step-text {
+.step-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
 }
+
 
 .anzahlPortionen {
     padding: 1%;
@@ -81,4 +92,9 @@ h1 {
 .anzahlPortionen input {
     margin-left: 10px;
     width: 70px;
+}
+
+.nährwerte {
+    display: flex;
+    justify-content: center;
 }
