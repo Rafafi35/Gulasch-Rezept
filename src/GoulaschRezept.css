@@ -51,8 +51,8 @@
 .box {
     border: solid black 3px;
     width: 35%;
-    padding: 5%;
-    margin: 2%;
+    padding: 50px;
+    margin: 20px;
 }
 
 h1 {

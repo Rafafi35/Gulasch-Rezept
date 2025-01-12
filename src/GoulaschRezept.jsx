@@ -2,8 +2,28 @@ import "./mvp.css";
 import './GoulaschRezept.css';
 import hintergrundvideo from "./assets/hintergrund-video.mp4";
 import bild from "./assets/kochbild.png";
+import {useState} from "react";
 
 function GoulaschRezept() {
+
+    const [anzahlPortionen, setAnzahlPortionen] = useState(4)
+    const changeAnzahlPortionen = (e) => {
+        setAnzahlPortionen(e.target.value);
+    }
+
+    //Mengen als Variabeln
+    let oelMenge = 1
+    let fettMenge = 1
+    let zwiebelMenge = 50
+    let fleischMenge = 150
+    let paprikaMenge = 50
+    let kartoffelMenge = 75
+    let karottenMenge = 100
+    let sellerieMenge = 75
+    let kohlrabiMenge = 30
+    let paprikaPulverMenge = 1
+    let kuminPulverMenge = 2
+
 
     return (
         <div className="total">
@@ -19,32 +39,31 @@ function GoulaschRezept() {
             <div className="content">
                 <div className="anzahlPortionen">
                     <label htmlFor="anzahlPortionen">Anzahl Portionen:</label>
-                    <input type="number" name="anzahlPortionen" id="anzahlPortionen" max="100" min="1"
-                           defaultValue="4"/>
+                    <input type="number"
+                           name="anzahlPortionen"
+                           id="anzahlPortionen"
+                           max="100"
+                           min="1"
+                           value={anzahlPortionen}
+                           onChange={changeAnzahlPortionen}
+                    />
                 </div>
 
-
-                <div className="info-section">
+                <div className={"info-section"}>
                     <div className="box">
                         <h2>Zutaten</h2>
                         <ul>
-                            <li>Zutat 1</li>
-                            <li>Zutat 2</li>
-                            <li>Zutat 3</li>
-                            <li>Zutat 4</li>
-                            <li>Zutat 5</li>
-                            <li>Zutat 6</li>
-                            <li>...</li>
-                        </ul>
-                    </div>
-
-                    <div className="box">
-                        <h2>Benötigtes Küchenwerkzeug</h2>
-                        <ul>
-                            <li>Werkzeug 1</li>
-                            <li>Werkzeug 2</li>
-                            <li>Werkzeug 3</li>
-                            <li>...</li>
+                            <li>{anzahlPortionen * fettMenge} EL Schweine Fett / {anzahlPortionen * oelMenge} EL Öl</li>
+                            <li>{anzahlPortionen * zwiebelMenge}g rote Zwiebeln</li>
+                            <li>{anzahlPortionen * fleischMenge}g Rindsragout</li>
+                            <li>{anzahlPortionen * paprikaMenge}g rote Paprika</li>
+                            <li>{anzahlPortionen * paprikaMenge}g weisse Paprika</li>
+                            <li>{anzahlPortionen * kartoffelMenge}g Kartoffeln</li>
+                            <li>{anzahlPortionen * karottenMenge}g Karotten</li>
+                            <li>{anzahlPortionen * sellerieMenge}g Sellerie</li>
+                            <li>{anzahlPortionen * kohlrabiMenge}g Kohlrabi</li>
+                            <li>{anzahlPortionen * paprikaPulverMenge} EL Paprika Pulver süss</li>
+                            <li>{anzahlPortionen * kuminPulverMenge} TL Kuminpulver</li>
                         </ul>
                     </div>
                 </div>
@@ -54,34 +73,48 @@ function GoulaschRezept() {
                 <div className="nährwerte">
 
                     <table>
+                        <tbody>
                         <tr>
                             <td>Kalorien</td>
                             <td>100</td>
                         </tr>
+                        </tbody>
+                        <tbody>
                         <tr>
                             <td>Fett</td>
                             <td>100</td>
                         </tr>
+                        </tbody>
+                        <tbody>
                         <tr>
                             <td>davon gesättigte Fettsäuren</td>
                             <td>100</td>
                         </tr>
+                        </tbody>
+                        <tbody>
                         <tr>
                             <td>Kohlenhydrathe</td>
                             <td>100</td>
                         </tr>
+                        </tbody>
+                        <tbody>
                         <tr>
                             <td>davon Zucker</td>
                             <td>100</td>
                         </tr>
+                        </tbody>
+                        <tbody>
                         <tr>
                             <td>Proteine</td>
                             <td>100</td>
                         </tr>
+                        </tbody>
+                        <tbody>
                         <tr>
                             <td>Salz</td>
                             <td>100</td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
 
