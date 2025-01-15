@@ -1,7 +1,12 @@
 import "./mvp.css";
 import './GoulaschRezept.css';
-import hintergrundvideo from "./assets/hintergrund-video.mp4";
-import bild from "./assets/kochbild.png";
+import hintergrundvideo from "./assets/vorschau1.mp4";
+import bild1 from "./assets/bild1.jpg";
+import bild2 from "./assets/bild2.jpg";
+import bild3 from "./assets/bild3.jpg";
+import bild4 from "./assets/bild4.jpg";
+import bild5 from "./assets/bild5.jpg";
+import bild6 from "./assets/bild6.jpg";
 import {useState} from "react";
 
 function GoulaschRezept() {
@@ -12,25 +17,22 @@ function GoulaschRezept() {
     }
 
     //Mengen als Variabeln
-    let oelMenge = 1
+    let oelMenge = 2
     let fettMenge = 1
     let zwiebelMenge = 50
     let fleischMenge = 150
     let paprikaMenge = 50
     let kartoffelMenge = 75
-    let karottenMenge = 100
+    let karottenMenge = 75
     let sellerieMenge = 75
     let kohlrabiMenge = 30
     let paprikaPulverMenge = 1
-    let kuminPulverMenge = 2
+    let kuemmelPulverMenge = 2
 
 
     return (
         <div className="total">
             <div className="bg-video-container">
-                <div className="titel">
-                    <h1>Gulasch Rezept</h1>
-                </div>
                     <video playsInline autoPlay loop muted>
                         <source src={hintergrundvideo} />
                     </video>
@@ -63,56 +65,56 @@ function GoulaschRezept() {
                             <li>{anzahlPortionen * sellerieMenge}g Sellerie</li>
                             <li>{anzahlPortionen * kohlrabiMenge}g Kohlrabi</li>
                             <li>{anzahlPortionen * paprikaPulverMenge} EL Paprika Pulver süss</li>
-                            <li>{anzahlPortionen * kuminPulverMenge} TL Kuminpulver</li>
+                            <li>{anzahlPortionen * kuemmelPulverMenge} TL Kuemmelpulver</li>
                         </ul>
                     </div>
                 </div>
 
-                <h1>Nährwerte pro Portion (...g)</h1>
+                <h1>Nährwerte pro Portion</h1>
 
                 <div className="nährwerte">
 
                     <table>
                         <tbody>
                         <tr>
-                            <td>Kalorien</td>
-                            <td>100</td>
+                            <td>Kcal</td>
+                            <td>512</td>
                         </tr>
                         </tbody>
                         <tbody>
                         <tr>
                             <td>Fett</td>
-                            <td>100</td>
+                            <td>23.5g</td>
                         </tr>
                         </tbody>
                         <tbody>
                         <tr>
                             <td>davon gesättigte Fettsäuren</td>
-                            <td>100</td>
+                            <td>4.6g</td>
                         </tr>
                         </tbody>
                         <tbody>
                         <tr>
                             <td>Kohlenhydrathe</td>
-                            <td>100</td>
+                            <td>34g</td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td>davon Ballaststoffe</td>
+                            <td>10.9g</td>
                         </tr>
                         </tbody>
                         <tbody>
                         <tr>
                             <td>davon Zucker</td>
-                            <td>100</td>
+                            <td>18.4g</td>
                         </tr>
                         </tbody>
                         <tbody>
                         <tr>
                             <td>Proteine</td>
-                            <td>100</td>
-                        </tr>
-                        </tbody>
-                        <tbody>
-                        <tr>
-                            <td>Salz</td>
-                            <td>100</td>
+                            <td>35.7g</td>
                         </tr>
                         </tbody>
                     </table>
@@ -122,59 +124,85 @@ function GoulaschRezept() {
                     <h1>Schritt für Schritt Anleitung</h1>
                     <div className="step">
                         <div className="step-left">
-                            <img src={bild}/>
+                            <img src={bild1}/>
                         </div>
 
                         <div className="step-right">
                             <h3>Schritt 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                <br/>
-                                sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
+                            <p>Fleisch, Kartoffeln, Karotten, Kohlrabi, Sellerie, rote/weisse Paprika und rote
+                                Zwiebeln<br/>
+                                klein schneiden. Gewürze bereitstellen.
+
+                            </p>
                         </div>
                     </div>
 
                     <div className="step">
                         <div className="step-left">
                             <h3>Schritt 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                <br/>
-                                sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
+                            <p>Fett oder Öl in einen Topf geben. Sobald das Fett/Öl heiss ist Zwiebeln hinzufügen
+                                <br/>und goldbraun anbraten.
+                            </p>
                         </div>
 
                         <div className="step-right">
-                            <img src={bild}/>
+                            <img src={bild2}/>
                         </div>
                     </div>
 
                     <div className="step">
                         <div className="step-left">
-                            <img src={bild}/>
+                            <img src={bild3}/>
                         </div>
 
                         <div className="step-right">
                             <h3>Schritt 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                <br/>
-                                sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
+                            <p>Fleisch hinzugeben und anbraten.</p>
                         </div>
                     </div>
 
                     <div className="step">
                         <div className="step-left">
                             <h3>Schritt 4</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            <p>Rote und Weisse Paprika hinzugeben. Paprika Pulver und Kümmelpulver hinzugeben.
                                 <br/>
-                                sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
+                                und untermischen. 20 - 30 Minuten auf niedrig bis mittelen Stufe köcheln lassen,
+                                <br/>zwischendurch gut umrühren. Wenn nötig Wasser hinzufügen.
+                            </p>
                         </div>
 
                         <div className="step-right">
-                            <img src={bild}/>
+                            <img src={bild4}/>
                         </div>
                     </div>
+
+                    <div className="step">
+                        <div className="step-left">
+                            <img src={bild5}/>
+                        </div>
+
+                        <div className="step-right">
+                            <h3>Schritt 5</h3>
+                            <p>Karotten, Sellerie, Kohlrabi beigeben. Wasser hinzugeben. 1 bis 1.5 Stunden
+                                <br/> kochen lassen, währenddessen immer wieder umrühren und verdunstetes Wasser
+                                <br/> nachfüllen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="step">
+                        <div className="step-left">
+                            <h3>Schritt 6</h3>
+                            <p>Kartoffeln hinzugeben und weitere 40 Minuten kochen lassen. Wenn nötig
+                            <br/> Wasser hinzufügen. Mit Salz und Pfeffer abschmecken. Guten Appetit!
+                            </p>
+                        </div>
+
+                        <div className="step-right">
+                            <img src={bild6}/>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
