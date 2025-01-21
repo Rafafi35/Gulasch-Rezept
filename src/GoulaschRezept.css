@@ -38,7 +38,8 @@ h2 {
     z-index: 2;
     width: 100vw;
     height: 100%;
-    background-color: white;
+    background-color: #AC8968;
+    border-top: solid 3px #3E362E;
 }
 
 .anzahlPortionen {
@@ -61,10 +62,11 @@ h2 {
 }
 
 .zutaten-child {
-    border: solid black 3px;
+    border: solid #3E362E 3px;
     width: 35%;
     padding: 50px;
     margin: 20px;
+    background-color: #a67c55;
 }
 
 .nährwerte {
@@ -82,12 +84,13 @@ h2 {
 }
 
 .steps-child {
-    border: solid black 3px;
+    border: solid #3E362E 3px;
     width: 85%;
     padding: 50px;
     margin-bottom: 3%;
     display: flex;
     flex-direction: row;
+    background-color: #a67c55;
 }
 
 .step-element-left {
@@ -121,16 +124,16 @@ h2 {
 img {
     width: 600px;
     height: auto;
-    border: black solid 3px;
+    border: #3E362E solid 3px;
     border-radius: 7px;
 }
 
 
 .footer {
     height: 5%;
-    background-color: orange;
+    background-color: #a67c55;
     z-index: 2;
-    border-top: 3px solid black;
+    border-top: 3px solid #3E362E;
     display: flex;
     flex-direction: row;
     justify-content: center;

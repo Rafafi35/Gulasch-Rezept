@@ -214,7 +214,7 @@ function GoulaschRezept() {
             </div>
 
             <div className="footer">
-                <p>Rafael Salinger</p>
+                <p>Rafael Salinger 2025</p>
 
             </div>
 
