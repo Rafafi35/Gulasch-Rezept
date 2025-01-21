@@ -7,6 +7,7 @@ import bild3 from "./assets/bild3.jpg";
 import bild4 from "./assets/bild4.jpg";
 import bild5 from "./assets/bild5.jpg";
 import bild6 from "./assets/bild6.jpg";
+import arrow from "./assets/arrow.png";
 import {useState} from "react";
 
 function GoulaschRezept() {
@@ -33,12 +34,19 @@ function GoulaschRezept() {
     return (
         <div className="total">
             <div className="bg-video-container">
+                <div className="bg-video">
                     <video playsInline autoPlay loop muted>
-                        <source src={hintergrundvideo} />
+                        <source src={hintergrundvideo}/>
                     </video>
+                </div>
+
+                <div className="arrow">
+                    <img src={arrow}/>
+                </div>
             </div>
 
             <div className="content">
+                <h1>Gulasch Rezept</h1>
                 <div className="anzahlPortionen">
                     <label htmlFor="anzahlPortionen">Anzahl Portionen:</label>
                     <input type="number"
@@ -51,8 +59,8 @@ function GoulaschRezept() {
                     />
                 </div>
 
-                <div className={"info-section"}>
-                    <div className="box">
+                <div className={"zutaten-parent"}>
+                    <div className="zutaten-child">
                         <h2>Zutaten</h2>
                         <ul>
                             <li>{anzahlPortionen * fettMenge} EL Schweine Fett / {anzahlPortionen * oelMenge} EL Öl</li>
@@ -194,7 +202,7 @@ function GoulaschRezept() {
                         <div className="step-left">
                             <h3>Schritt 6</h3>
                             <p>Kartoffeln hinzugeben und weitere 40 Minuten kochen lassen. Wenn nötig
-                            <br/> Wasser hinzufügen. Mit Salz und Pfeffer abschmecken. Guten Appetit!
+                                <br/> Wasser hinzufügen. Mit Salz und Pfeffer abschmecken. Guten Appetit!
                             </p>
                         </div>
 
@@ -205,6 +213,12 @@ function GoulaschRezept() {
 
                 </div>
             </div>
+
+            <div className="footer">
+                <p>Rafael Salinger</p>
+
+            </div>
+
         </div>
     );
 }
