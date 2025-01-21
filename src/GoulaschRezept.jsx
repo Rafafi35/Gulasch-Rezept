@@ -131,83 +131,81 @@ function GoulaschRezept() {
                 <div className="steps-parent">
 
                     <div className="steps-child">
-                        <div className="step-left">
+                        <div className="step-element-left">
                             <img src={bild1}/>
                         </div>
 
-                        <div className="step-right">
+                        <div className="step-element-right">
                             <h3>Schritt 1</h3>
                             <p>Fleisch, Kartoffeln, Karotten, Kohlrabi, Sellerie, rote/weisse Paprika und rote
-                                Zwiebeln<br/>
-                                klein schneiden. Gewürze bereitstellen.
+                                Zwiebeln klein schneiden. Gewürze bereitstellen.
 
                             </p>
                         </div>
                     </div>
 
                     <div className="steps-child">
-                        <div className="step-left">
+                        <div className="step-element-left">
                             <h3>Schritt 2</h3>
                             <p>Fett oder Öl in einen Topf geben. Sobald das Fett/Öl heiss ist Zwiebeln hinzufügen
-                                <br/>und goldbraun anbraten.
+                                und goldbraun anbraten.
                             </p>
                         </div>
 
-                        <div className="step-right">
+                        <div className="step-element-right">
                             <img src={bild2}/>
                         </div>
                     </div>
 
                     <div className="steps-child">
-                        <div className="step-left">
+                        <div className="step-element-left">
                             <img src={bild3}/>
                         </div>
 
-                        <div className="step-right">
+                        <div className="step-element-right">
                             <h3>Schritt 3</h3>
                             <p>Fleisch hinzugeben und anbraten.</p>
                         </div>
                     </div>
 
                     <div className="steps-child">
-                        <div className="step-left">
+                        <div className="step-element-left">
                             <h3>Schritt 4</h3>
                             <p>Rote und Weisse Paprika hinzugeben. Paprika Pulver und Kümmelpulver hinzugeben.
-                                <br/>
                                 und untermischen. 20 - 30 Minuten auf niedrig bis mittelen Stufe köcheln lassen,
-                                <br/>zwischendurch gut umrühren. Wenn nötig Wasser hinzufügen.
+                                zwischendurch gut umrühren. Wenn nötig Wasser hinzufügen.
                             </p>
                         </div>
 
-                        <div className="step-right">
+                        <div className="step-element-right">
                             <img src={bild4}/>
                         </div>
                     </div>
 
                     <div className="steps-child">
-                        <div className="step-left">
+                        <div className="step-element-left">
                             <img src={bild5}/>
                         </div>
 
-                        <div className="step-right">
+                        <div className="step-element-right">
                             <h3>Schritt 5</h3>
                             <p>Karotten, Sellerie, Kohlrabi beigeben. Wasser hinzugeben. 1 bis 1.5 Stunden
-                                <br/> kochen lassen, währenddessen immer wieder umrühren und verdunstetes Wasser
-                                <br/> nachfüllen.
+                                kochen lassen, währenddessen immer wieder umrühren und verdunstetes Wasser
+                                nachfüllen.
                             </p>
                         </div>
                     </div>
 
                     <div className="steps-child">
-                        <div className="step-left">
+                        <div className="step-element-left">
                             <h3>Schritt 6</h3>
-                            <p>Kartoffeln hinzugeben und weitere 40 Minuten kochen lassen. <br/> Wenn nötig Wasser
+                            <p>Kartoffeln hinzugeben und weitere 40 Minuten kochen lassen. Wenn nötig Wasser
                                 hinzufügen. Mit Salz und Pfeffer abschmecken.
                                 <br/> Guten Appetit!
                             </p>
                         </div>
 
-                        <div className="step-right">
+                        <div className="step-element-right">
                             <img src={bild6}/>
                         </div>
                     </div>
