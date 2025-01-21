@@ -73,7 +73,7 @@ function GoulaschRezept() {
                             <li>{anzahlPortionen * sellerieMenge}g Sellerie</li>
                             <li>{anzahlPortionen * kohlrabiMenge}g Kohlrabi</li>
                             <li>{anzahlPortionen * paprikaPulverMenge} EL Paprika Pulver süss</li>
-                            <li>{anzahlPortionen * kuemmelPulverMenge} TL Kuemmelpulver</li>
+                            <li>{anzahlPortionen * kuemmelPulverMenge} TL Kümmelpulver</li>
                         </ul>
                     </div>
                 </div>
@@ -127,10 +127,10 @@ function GoulaschRezept() {
                         </tbody>
                     </table>
                 </div>
+                <h1>Schritt für Schritt Anleitung</h1>
+                <div className="steps-parent">
 
-                <div className="steps">
-                    <h1>Schritt für Schritt Anleitung</h1>
-                    <div className="step">
+                    <div className="steps-child">
                         <div className="step-left">
                             <img src={bild1}/>
                         </div>
@@ -145,7 +145,7 @@ function GoulaschRezept() {
                         </div>
                     </div>
 
-                    <div className="step">
+                    <div className="steps-child">
                         <div className="step-left">
                             <h3>Schritt 2</h3>
                             <p>Fett oder Öl in einen Topf geben. Sobald das Fett/Öl heiss ist Zwiebeln hinzufügen
@@ -158,7 +158,7 @@ function GoulaschRezept() {
                         </div>
                     </div>
 
-                    <div className="step">
+                    <div className="steps-child">
                         <div className="step-left">
                             <img src={bild3}/>
                         </div>
@@ -169,7 +169,7 @@ function GoulaschRezept() {
                         </div>
                     </div>
 
-                    <div className="step">
+                    <div className="steps-child">
                         <div className="step-left">
                             <h3>Schritt 4</h3>
                             <p>Rote und Weisse Paprika hinzugeben. Paprika Pulver und Kümmelpulver hinzugeben.
@@ -184,7 +184,7 @@ function GoulaschRezept() {
                         </div>
                     </div>
 
-                    <div className="step">
+                    <div className="steps-child">
                         <div className="step-left">
                             <img src={bild5}/>
                         </div>
@@ -198,11 +198,12 @@ function GoulaschRezept() {
                         </div>
                     </div>
 
-                    <div className="step">
+                    <div className="steps-child">
                         <div className="step-left">
                             <h3>Schritt 6</h3>
-                            <p>Kartoffeln hinzugeben und weitere 40 Minuten kochen lassen. Wenn nötig
-                                <br/> Wasser hinzufügen. Mit Salz und Pfeffer abschmecken. Guten Appetit!
+                            <p>Kartoffeln hinzugeben und weitere 40 Minuten kochen lassen. <br/> Wenn nötig Wasser
+                                hinzufügen. Mit Salz und Pfeffer abschmecken.
+                                <br/> Guten Appetit!
                             </p>
                         </div>
 
